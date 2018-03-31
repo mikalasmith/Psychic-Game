@@ -43,7 +43,7 @@
         var numGuesses = 9;
         var guessChoices = [];
 
-        document.onkeyup = function(event){ 
+        document.onkeyup = function(event) { 
 
              var userGuess = event.key;
 
@@ -52,7 +52,7 @@
              var options = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
                             "m", "n", "o", "p", "q", "r","s", "t", "u", "v", "w", "x", "y", "z"];
 
-            if (options.indexOf(userGuess)> -1) {
+            if (options.indexOf(userGuess) > -1) {
                 if (userGuess === compterGuess)
                 wins ++;
                 numGuesses = 9;
@@ -80,9 +80,8 @@
 
              document.querySelector("#game").innerHTML = html;   
 
-
-                }
-            };
+        };
+            
         
 
 </script>
