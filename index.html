@@ -53,7 +53,7 @@
                             "m", "n", "o", "p", "q", "r","s", "t", "u", "v", "w", "x", "y", "z"];
 
             if (options.indexOf(userGuess) > -1) {
-                if (userGuess === compterGuess)
+                if (userGuess === computerGuess)
                 wins ++;
                 numGuesses = 9;
                 guessChoices = [];
@@ -72,7 +72,7 @@
             
             var html =
              "<h1> The Psychic Game </h1>" +
-             "<p> Guess what letter I'm thinking of </p>"
+             "<p> Guess what letter I'm thinking of </p>" +
              "<p> Wins:" + wins + "</p>" +
              "<p> Losses:" + losses + "</p>" +
              "<p> Guesses Left: " + numGuesses + "</p>" +
