@@ -18,7 +18,7 @@
 </head>
 
 <body>
-<div id="game>"> 
+<div id="game"> 
 <h1>The Psychic Game</h1>
 <br>
 <p> Guess what letter I'm thinking of</p>
@@ -44,6 +44,7 @@
         var guessChoices = [];
 
         document.onkeyup = function(event) { 
+            console.log(event);
 
              var userGuess = event.key;
 
@@ -78,7 +79,7 @@
              "<p> Guesses Left: " + numGuesses + "</p>" +
              "<p> Your Guesses so far:" + guessChoices.join(",") + "</p>";
 
-             document.querySelector("#game").innerHTML = html;   
+             document.getElementById("game").innerHTML = html;   
 
         };
             
